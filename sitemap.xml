@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://yeonmujang.kr/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yeonmujang.kr/assets/hero.jpg</image:loc>
+      <image:title>연무장길 31-2 건물 정면</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yeonmujang.kr/assets/front.jpg</image:loc>
+      <image:title>연무장길 31-2 건물 정면 — 연무장길 방면</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yeonmujang.kr/assets/map.jpg</image:loc>
+      <image:title>연무장길 31-2 위치 및 주변 브랜드 지도</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yeonmujang.kr/assets/plan-2f.png</image:loc>
+      <image:title>연무장길 31-2 지상 2층 평면도</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yeonmujang.kr/assets/plan-3f.png</image:loc>
+      <image:title>연무장길 31-2 지상 3층 평면도</image:title>
+    </image:image>
   </url>
 </urlset>
