@@ -54,7 +54,7 @@
       "email": "ii1253ii@naver.com",
       "taxID": "11680-2014-00063",
       "founder": {"@type": "Person", "name": "문승환"},
-      "employee": {"@type": "Person", "name": "이지혜", "jobTitle": "팀장", "telephone": "+82-10-3008-1253", "subjectOf": {"@id": "https://yeonmujang.kr/#press-1"}},
+      "employee": {"@type": "Person", "name": "이지혜", "jobTitle": "팀장", "telephone": "+82-10-3008-1253", "subjectOf": {"@id": "https://yeonmujang.kr/#press-1"}, "sameAs": ["https://www.youtube.com/@%EC%A7%80%ED%98%9C%EB%A1%9C%EC%9A%B4%EB%B9%8C%EB%94%A9/videos"]},
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "도산대로 100길 18",
@@ -399,7 +399,9 @@ footer b{color:#EDE7D9;font-weight:500}
 
 /* press */
 .press{background:var(--bg-soft)}
-.press-card{max-width:720px;margin-top:40px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 36px;box-shadow:0 20px 44px -28px rgba(38,41,31,.35)}
+.press-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+@media(max-width:860px){.press-grid{grid-template-columns:1fr}}
+.press-card{margin-top:0;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:34px 36px;box-shadow:0 20px 44px -28px rgba(38,41,31,.35)}
 .press-meta{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-soft);letter-spacing:.04em}
 .press-meta .outlet{font-weight:600;color:var(--terra)}
 .press-title{display:block;margin-top:10px;font-family:'Noto Serif KR',serif;font-weight:600;font-size:19px;color:var(--ink);text-decoration:none;line-height:1.5}
@@ -648,14 +650,23 @@ footer b{color:#EDE7D9;font-weight:500}
 
 <section id="press" class="press">
   <div class="wrap">
-    <p class="eyebrow reveal">PRESS</p>
-    <h2 class="reveal">언론에 소개된<br>이지혜 팀장의 인사이트</h2>
-    <div class="press-card reveal">
-      <div class="press-meta"><span class="outlet">땅집고(조선일보)</span><span class="dot">·</span><time datetime="2026-04-29">2026.04.29</time></div>
-      <a class="press-title" href="https://realty.chosun.com/site/data/html_dir/2026/04/28/2026042803381.html" target="_blank" rel="noopener">창업 3년 만에 2200억에 팔린 '런베뮤' 옆 디퓨저 회사의 비결</a>
-      <blockquote class="press-quote">“성수나 도산공원처럼 임대료가 높은 지역은 명품 브랜드 중심이라 진입이 쉽지 않다. 북촌은 내·외국인 수요를 동시에 겨냥한 중저가 브랜드들이 쇼룸 형태로 들어오려는 수요가 꾸준하다.”</blockquote>
-      <div class="press-byline">— 이지혜 (주)BSN빌사남부동산중개법인 공인중개사 · 배민주 기자</div>
-      <a class="press-link" href="https://realty.chosun.com/site/data/html_dir/2026/04/28/2026042803381.html" target="_blank" rel="noopener">기사 원문 보기 ↗</a>
+    <p class="eyebrow reveal">PRESS &amp; MEDIA</p>
+    <h2 class="reveal">언론·미디어에 소개된<br>이지혜 팀장의 인사이트</h2>
+    <div class="press-grid">
+      <div class="press-card reveal">
+        <div class="press-meta"><span class="outlet">땅집고(조선일보)</span><span class="dot">·</span><time datetime="2026-04-29">2026.04.29</time></div>
+        <a class="press-title" href="https://realty.chosun.com/site/data/html_dir/2026/04/28/2026042803381.html" target="_blank" rel="noopener">창업 3년 만에 2200억에 팔린 '런베뮤' 옆 디퓨저 회사의 비결</a>
+        <blockquote class="press-quote">“성수나 도산공원처럼 임대료가 높은 지역은 명품 브랜드 중심이라 진입이 쉽지 않다. 북촌은 내·외국인 수요를 동시에 겨냥한 중저가 브랜드들이 쇼룸 형태로 들어오려는 수요가 꾸준하다.”</blockquote>
+        <div class="press-byline">— 이지혜 (주)BSN빌사남부동산중개법인 공인중개사 · 배민주 기자</div>
+        <a class="press-link" href="https://realty.chosun.com/site/data/html_dir/2026/04/28/2026042803381.html" target="_blank" rel="noopener">기사 원문 보기 ↗</a>
+      </div>
+      <div class="press-card reveal">
+        <div class="press-meta"><span class="outlet">YouTube</span><span class="dot">·</span><span>공식 채널</span></div>
+        <a class="press-title" href="https://www.youtube.com/@%EC%A7%80%ED%98%9C%EB%A1%9C%EC%9A%B4%EB%B9%8C%EB%94%A9/videos" target="_blank" rel="noopener">지혜로운빌딩</a>
+        <blockquote class="press-quote">빌딩의 가치를 이해시키는 지혜로운 빌딩 매매 전문 공인중개사 이지혜의 유튜브 채널입니다. 빌딩 매매·임대 인사이트를 영상으로 확인해 보세요.</blockquote>
+        <div class="press-byline">— 이지혜 (주)BSN빌사남부동산중개법인 공인중개사</div>
+        <a class="press-link" href="https://www.youtube.com/@%EC%A7%80%ED%98%9C%EB%A1%9C%EC%9A%B4%EB%B9%8C%EB%94%A9/videos" target="_blank" rel="noopener">채널 보러가기 ↗</a>
+      </div>
     </div>
   </div>
 </section>
